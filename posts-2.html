@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b06-sd-karaoke-real2</title>
+  <meta name="description" content="t3b06-sd-karaoke-real2에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sindorim-room-song.link-hub.org/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Brutalist Avant-Garde & Night Signal Theme CSS */
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ body {
+ background-color: #050505;
+ color: #f0f0f0;
+ font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+ line-height: 1.5;
+ padding: 0;
+ overflow-x: hidden;
+ border: 6px solid #ff5f00;
+ }
+ 
+ /* Typography Scale */
+ h1, h2, h3 {
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -0.05em;
+ color: #ffffff;
+ }
+ h1 {
+ font-size: 3rem;
+ line-height: 1.0;
+ color: #ff5f00;
+ text-shadow: 3px 3px 0px #ffffff;
+ margin-bottom: 20px;
+ }
+ h2 {
+ font-size: 1.8rem;
+ border-bottom: 3px solid #ff5f00;
+ padding-bottom: 8px;
+ margin-bottom: 20px;
+ display: inline-block;
+ }
+ h3 {
+ font-size: 1.3rem;
+ color: #ff5f00;
+ margin-bottom: 10px;
+ }
+
+ /* Header & Navigation */
+ .random-header {
+ background-color: #000000;
+ border-bottom: 4px solid #ff5f00;
+ padding: 15px 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .random-header .logo {
+ font-weight: 900;
+ font-size: 1.5rem;
+ color: #ff5f00;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ }
+ .random-header .logo span {
+ color: #ffffff;
+ background-color: #ff5f00;
+ padding: 2px 6px;
+ margin-left: 5px;
+ }
+ .nav-links {
+ display: flex;
+ gap: 15px;
+ }
+ .nav-links a {
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ padding: 5px 10px;
+ border: 1px solid transparent;
+ transition: all 0.2s ease;
+ }
+ .nav-links a:hover, .nav-links a.active {
+ background-color: #ff5f00;
+ color: #000000;
+ border-color: #ffffff;
+ }
+
+ /* Main Container */
+ .x-main-xq2z {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 40px 20px;
+ }
+
+ /* Grid Layout for Transit Map Concept */
+ .transit-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 30px;
+ margin-top: 40px;
+ }
+ @media (max-width: 768px) {
+ .transit-grid {
+ grid-template-columns: 1fr;
+ }
+ h1 {
+ font-size: 2.2rem;
+ }
+ }
+
+ /* Brutalist Box styling */
+ .m-box-vfbx {
+ background-color: #111111;
+ border: 3px solid #ffffff;
+ padding: 30px;
+ position: relative;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ .m-box-vfbx:hover {
+ transform: translate(-4px, -4px);
+ box-shadow: 8px 8px 0px #ff5f00;
+ }
+ .m-box-vfbx::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 10px;
+ height: 100%;
+ background-color: #ff5f00;
+ }
+
+ /* Badge and Label components */
+ .q-ico-lou7-badge {
+ background-color: #ff5f00;
+ color: #000000;
+ font-weight: 900;
+ padding: 3px 8px;
+ font-size: 0.8rem;
+ display: inline-block;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ }
+ .v-item-2i3g-label {
+ font-family: monospace;
+ color: #888888;
+ font-size: 0.85rem;
+ margin-bottom: 5px;
+ display: block;
+ }
+
+ /* Content Text styling */
+ .v-body-qzb7 {
+ font-size: 1rem;
+ color: #cccccc;
+ line-height: 1.7;
+ }
+ .v-body-qzb7 p {
+ margin-bottom: 15px;
+ }
+ .v-body-qzb7 strong {
+ color: #ffffff;
+ }
+ .v-body-qzb7 a {
+ color: #ff5f00;
+ text-decoration: underline;
+ }
+ .v-body-qzb7 a:hover {
+ color: #ffffff;
+ background-color: #ff5f00;
+ }
+
+ /* Specific Layout Accent: Vertical Timeline Line */
+ .timeline-container {
+ border-left: 4px dashed #ff5f00;
+ padding-left: 20px;
+ margin: 30px 0;
+ }
+ .timeline-step {
+ margin-bottom: 30px;
+ position: relative;
+ }
+ .timeline-step::before {
+ content: '';
+ position: absolute;
+ left: -27px;
+ top: 5px;
+ width: 10px;
+ height: 100%;
+ background-color: #050505;
+ }
+ .timeline-step::after {
+ content: '';
+ position: absolute;
+ left: -29px;
+ top: 5px;
+ width: 14px;
+ height: 14px;
+ background-color: #ffffff;
+ border: 3px solid #ff5f00;
+ border-radius: 50%;
+ }
+
+ /* Footer */
+ footer {
+ background-color: #000000;
+ border-top: 4px solid #ff5f00;
+ padding: 40px 20px;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #666666;
+ margin-top: 60px;
+ }
+ footer p {
+ margin-bottom: 10px;
+ }
+ footer a {
+ color: #ff5f00;
+ text-decoration: none;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b06-sd-karaoke-real2">
+  <meta property="og:description" content="t3b06-sd-karaoke-real2에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sindorim-room-song.link-hub.org/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="random-header">
+ <a href="http://sindorim-room-song.link-hub.org/" class="logo">SDR <span>SIGNAL</span></a>
+ <nav class="nav-links">
+ <a href="http://sindorim-room-song.link-hub.org/">홈</a>
+ <a href="http://sindorim-room-song.link-hub.org/info.html" class="active">정보</a>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0158.html">신도림 가라오케 찐후기 기반의 마포 유흥 투명 정찰제 가격 정보 디렉토리</a>
+        <p class="post-item__summary">신도림 가라오케 찐후기를 찾아보는 이들이라면 누구나 가격에 대한 의문점을 가지기 마련입니다. 서비스의 질은 평준화되어 있다 하더라도 지불해야 하는 비용의 기준이 업체마다 상이하기 때문에 소비자는 항</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0408.html">신도림 가라오케 찐후기 보고 배우는 합정 노래방 추천정보 체크</a>
+        <p class="post-item__summary">신도림 가라오케 찐후기를 살펴보면 방문객들이 얼마나 위치와 접근성에 민감한지 잘 나타나 있습니다. 합정 지역에서 즐거운 노래방 문화를 즐기기 위해서는 단순히 시설의 인테리어뿐만 아니라 찾아가는 과정</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0409.html">신도림 가라오케 찐후기 경험자가 말하는 연남 클럽 추천정보 정리</a>
+        <p class="post-item__summary">지난번 작성했던 신도림 가라오케 찐후기 포스팅을 읽고 많은 분이 연남동의 밤문화에 대해 문의를 주셨습니다. 특히 주말 저녁이면 연남의 거리에는 젊은 열기로 가득 차곤 합니다. 처음 이곳을 방문하는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0410.html">신도림 가라오케 찐후기 읽고 궁금해진 합정 셔츠룸 추천정보 탐구</a>
+        <p class="post-item__summary">인터넷에서 흔히 접하는 신도림 가라오케 찐후기 내용을 보다 보면 셔츠룸이라는 독특한 문화에 대해 오해하는 분들이 많습니다. 많은 사람이 이 공간을 단순한 유흥 시설로만 치부하지만, 사실 합리적인 시</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0411.html">신도림 가라오케 찐후기 기반의 공덕 가라오케 추천정보 분석</a>
+        <p class="post-item__summary">고급스러운 분위기, 최신 음향 시스템, 그리고 신속한 서비스 제공은 신도림 가라오케 찐후기를 살필 때 반드시 충족되어야 할 필수 조건입니다. 이러한 요소들은 단순한 유흥 공간을 넘어 대화와 노래가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0412.html">신도림 가라오케 찐후기 경험자가 비교한 상수 마사지 추천정보 가이드</a>
+        <p class="post-item__summary">여러분은 신체 피로를 해소하기 위해 어떤 기준으로 마사지 샵을 선택하시나요? 신도림 가라오케 찐후기를 작성하며 느꼈던 것은 어떤 서비스를 받든 사전 검증이 중요하다는 사실입니다. 상수 지역에서 힐링</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0413.html">신도림 가라오케 찐후기 확인하고 망원 노래방 추천정보 알아보는 법</a>
+        <p class="post-item__summary">인터넷에 넘쳐나는 신도림 가라오케 찐후기 내용을 읽다 보면 어떤 것이 진짜 정보인지 혼란스러울 때가 있습니다. 개인적인 경험담은 주관이 강하게 개입되기에, 단순히 글자만 보고 장소를 결정하는 것은 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0414.html">신도림 가라오케 찐후기 비교하며 찾는 홍대 노래방 추천정보 가격 분석</a>
+        <p class="post-item__summary">많은 이들이 신도림 가라오케 찐후기 내용을 참고하여 방문지를 고르지만, 정작 중요한 비용 체계에 대해서는 막막함을 느낍니다. 가격은 서비스의 질과 정비례하는 경향이 있으나, 때로는 지나치게 높은 가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0415.html">신도림 가라오케 찐후기 분석으로 보는 공덕 셔츠룸 추천정보 예약 전략</a>
+        <p class="post-item__summary">사람들이 신도림 가라오케 찐후기 글을 남길 때 자주 언급하는 실패 사례는 대부분 예약 단계에서 발생합니다. 예약 과정이 매끄럽지 않으면 당일 현장에서 겪는 스트레스가 상당합니다. 특히 정보의 부재나</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0416.html">신도림 가라오케 찐후기 바탕으로 체크할 연남 유흥 추천정보 입지조건</a>
+        <p class="post-item__summary">신도림 가라오케 찐후기 게시글들을 살펴보면 많은 사람이 접근성과 위치 문제를 간과하여 곤란을 겪습니다. 유흥 문화를 즐기러 갈 때 이동 동선이 복잡하면 시작 전부터 피로도가 누적될 수밖에 없습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0417.html">신도림 가라오케 찐후기 경험으로 배우는 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">오랜 지인과 함께 예상치 못한 회식 자리가 마련되어 급하게 장소를 물색하던 중 겪었던 혼란은 초행자라면 누구나 한 번쯤 겪는 과정입니다. 당시 신도림 가라오케 찐후기 정보를 통해 얻은 경험은 다른 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0418.html">신도림 가라오케 찐후기 시각에서 본 마곡 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">유흥 문화는 무조건 밤늦게 시작해야 좋다는 편견이 있지만, 실제로는 시간대에 따라 경험할 수 있는 분위기가 판이합니다. 신도림 가라오케 찐후기 사례들을 분석해보면 이른 저녁 시간을 활용하는 것이 훨</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">신도림 가라오케 찐후기 알아보기</a>
+        <p class="post-item__summary">신도림 지역은 다양한 유흥 시설이 밀집해 있어 거주민과 방문객 모두에게 인기 있는 명소로 자리 잡고 있습니다. 특히 가라오케는 동료, 친구, 가족과의 모임을 이끌 때 자연스러운 선택지로 떠오르며, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">신도림 가라오케 찐후기</a>
+        <p class="post-item__summary">신도림 지역은 교통이 편리하고 다양한 편의 시설이 모여 있어 친구나 동료들과의 모임 장소로 많이 선택된다. 이 지역에는 여러 가라오케업소가 자리 잡고 있으며, 각 업소는 독특한 분위기와 서비스로 방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">신도림 가라오케 관련 정보 안내</a>
+        <p class="post-item__summary">신도림 지역의 가라오케 공간은 다채로운 노래방 환경을 제공하는 장소로 알려져 있습니다. 이러한 시설은 주로 그룹 모임이나 개인의 여가 활동에 활용되며, 실내 음향 시스템과 곡 목록 구성이 특징입니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">신도림 가라까오키 방문 전 필수 안전 수칙 안내</a>
+        <p class="post-item__summary">신도림 지역의 가라오케는 다양한 연령대가 이용하는 대표적인 여가 문화 공간으로 자리 잡고 있습니다. 하지만 많은 사람들이 방문할수록 예상치 못한 분쟁이나 사고가 발생할 수 있으므로, 사전에 안전 수</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">신도림 가라오케 찐후기 정보 안내</a>
+        <p class="post-item__summary">신도림 지역에서는 다양한 형태의 노래방과 실내 오락 시설이 운영되고 있으며, 이러한 곳은 주로 친구나 동료들과의 사적 모임이나 가벼운 스트레스 해소를 목적으로 방문하는 경우가 많습니다. 이용객들은 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-r87xml.html">신도림 가라오케 찐후기 처음 알아볼 때 실제로 많이 묻는 질문 5가지</a>
+        <p class="post-item__summary">신도림 지역에서 가라오케를 처음 이용하려는 분들이 가장 궁금해하는 점은 예약 방법과 방문 시간대에 대한 안내입니다. 보통 온라인 예약 시스템이나 전화 예약을 통해 원하는 날짜와 시간을 확정할 수 있</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
